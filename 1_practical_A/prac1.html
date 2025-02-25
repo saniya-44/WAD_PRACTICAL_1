@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-layout{
+display: grid;
+grid-template-columns: 1fr 3fr;
+        }
+        header{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            border: 1px solid black;
+            height:  50px;
+            background-color: skyblue;
+        }
+       
+        .sidebar{
+            grid-column-start: 1;
+            grid-column-end: 2;
+border: 1px solid black;
+background-color: skyblue;
+height: 550px;
+margin-right: 50px;
+color: black;
+   }
+       
+       
+
+        #id1{
+           
+           
+            width: 50px;
+            height: 30px;
+
+            
+            
+        }
+        #id2{
+           
+           
+            width: 200px;
+            height: 100px;
+            
+            
+        }
+        #id3{
+           
+           
+            width: 200px;
+            height: 100px;
+            
+            
+        }
+        #id4{
+           
+           
+            width: 200px;
+            height: 100px;
+            
+            
+        }
+        #id5{
+           
+           
+            width: 200px;
+            height: 100px;
+            
+            
+        }
+       
+
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            margin-top: 20px;
+
+            
+         }
+         .flex-container div{
+            border: 1px solid black;
+            height: 200px;
+                text-align: center;
+            width: 200px;
+            margin-right: 40px;
+
+
+        }
+        table{
+            width: 100%;
+            margin-top: 30px;
+
+        }
+        td,th{
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-layout">
+    <header style="text-align: center; font-size: x-large;">
+        <input type="text" placeholder="Search .."  >
+        <img align="right" src="download.png"  id="id1" >
+    </header>
+ 
+  <div class="sidebar" >
+    <ul ><br><br><br>
+        <li><a href="#">Students</a></li><br><br>
+        <li><a href="#">Teachers</a></li><br><br>
+        <li><a href="#">School</a></li><br><br>
+        <li><a href="#">Help</a></li><br><br>
+        <li><a href="#">Settings</a></li>
+    </ul>
+   
+ </div>
+  <main>
+    <div class="flex-container" >
+        <div class="c1">     
+              <img align="center" src="img.jpg"  id="id2"><br>
+                 2194 Students
+        </div>
+        <div >
+            <img align="center"  src="tea.jpg" alt=""  id="id3"><br>
+            40 Teachers
+
+    </div>
+        <div > 
+            <img align="center" src="sc.jpg" id="id4"><br>
+        5 Schools</div>
+        <div ><img align="center" id="id5" src="income.jpg"><br> 350000 Income</div>
+
+</div>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+    </tr>
+    <tr>
+        <td>saniya</td>
+        <td>sa@gmail.com</td>
+        <td>12345</td>
+    </tr>
+    <tr>
+        <td>shaibaj</td>
+        <td>sh@gmail.com</td>
+        <td>12345678</td>
+    </tr>
+    <tr>
+        <td>karan</td>
+        <td>ka@gmail.com</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>ram</td>
+        <td>ra@gmail.com</td>
+        <td>1234</td>
+    </tr>
+</table>
+  </main>
+  
+
+ </body>
+</body>
+</html>
