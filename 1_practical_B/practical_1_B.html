@@ -1,0 +1,103 @@
+<html>
+<head><style>
+    input{
+        border-radius: 4px;
+    }
+   
+</style></head>
+<title>Student Registration form</title>
+<body bgcolor="sky blue">
+    <form name="myform" onsubmit="hi()">
+           <u><h1 align="center"> Student Registration Form</h1></u>
+    <table align="center" cellpadding=1  cellspacing=5 border="1" >
+        <tr>
+            <td>Name:</td><td><Input type="text" name="First Name" id="name" pattern="[A-Za-z]{1,}" required ></td>
+        </tr>
+        <tr>
+            <td> Last Name:</td><td><Input type="text" name="Last Name" id="lname" pattern="[A-Za-z]{1,}" required></td>
+        </tr>
+        <tr>
+            <td>Father's Name:</td><td><Input type="text" name="Father's Name" id="fname" pattern="[A-Za-z]{1,}" required ></td>
+        </tr>
+        <tr>
+            <td>Mother's Name:</td><td><Input type="text" name="Mother's Name" id="mname" pattern="[A-Za-z]{1,}" required></td>
+        </tr>
+        <tr>
+            <td>date of birth:</td><td><Input type="date" name="DOB" id="dob" required></td>
+        </tr>
+        <tr>
+            <td>Email:</td><td><Input type="email" name="Email" id="mail"  required></td>
+        </tr>
+        <tr>
+            <td>Gender:</td><td><input type="radio" name="gender" value="Male" id="gen" required>Male
+                <input type="radio" value="Female" name="gender" id="gen" required>Female</td>
+        </tr>
+        <tr>
+            <td>Choose Course:</td><td><select name="Select" id="co" required>
+                <option name="select" value="" >Select</option>
+                <option name="java" value="java">java</option>
+                <option name="C" value="C">C</option>
+                <option name="C++" value="C++">C++</option>
+                <option name="PHP" value="PHP">PHP</option>
+                <option name="SQLdatabase" value="SQLdatabase">SQL database</option>
+                <option name="python" value="python">Python</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td> Hobbies:</td><td><input type="checkbox" name="singing" id="sing" value="singing">singing
+            <input type="checkbox" name="Dancing" value="Dancing">Dancing
+            <input type="checkbox" name="ReadingBooks" value="ReadingBooks">Reading Books
+            <input type="checkbox" name="Cricket" value="Cricket">Playing Cricket</td>
+        </tr>
+        <tr>
+            <td>Address:</td><td><textarea name="address" id="add" pattern="[A-Za-z][0-10],.[]()-_!@#" required></textarea></td>
+        </tr>
+        
+        <tr>
+            <td>Submit</td><td><input type="submit" id="btn" ></td>
+        </tr>
+    </table>
+    
+    </form>
+    <Script>
+        function hi()
+        {
+            var a=document.getElementById("name").value;
+            var b=document.getElementById("lname").value;
+            var c=document.getElementById("fname").value;
+            var d=document.getElementById("mname").value;
+            var e=document.getElementById("dob").value;
+            var f=document.getElementById("mail").value;
+            var j=document.getElementById("add").value;
+            var h=document.getElementById("co").value;
+        
+            var x ="Hobbies: ";
+            with(document.forms.myform)
+            {
+            if(singing.checked == true)
+            {
+            x+= singing.value+ " ";
+            }
+            if(Dancing.checked == true)
+            {
+            x+= Dancing.value+ " ";
+            }
+            if(ReadingBooks.checked == true)
+            {
+            x+= ReadingBooks.value+ " ";
+            }
+            if(Cricket.checked == true)
+            {
+            x+= Cricket.value+ " ";
+            }
+            var g="Gender: ";
+            g+=gender.value+" ";
+            var stud="Student Registration Details:"
+            document.write("<h1>"+stud+"</h1><b><br>Name:"+a+"<br>Last Name:"+b+"<br>Fathers Name:"+c+"<br>Mothers Name:"+d+"<br>Date of Birth:"+e+"<br>Email:"+f+
+                    "<br>"+g+"<br>Course:"+h+"<br>"+x+"<br>Address:"+j)
+        
+        }
+            
+        }</Script>
+</body>
+</html>
